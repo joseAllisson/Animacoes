@@ -1,0 +1,116 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.roda{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roda span:nth-child(1){
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animacao 6s linear infinite;
+}
+
+.roda:hover span:nth-child(1){
+  border: none;
+  background: rgba(0, 0, 255, 0.808);
+}
+
+.roda span:nth-child(2){
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animacao 4s linear infinite;
+}
+
+.roda:hover span:nth-child(2){
+  border: none;
+  background: rgba(0, 0, 255, 0.808);
+}
+
+.roda span:nth-child(3){
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animacao2 10s linear infinite;
+}
+
+.roda:hover span:nth-child(3){
+  border: none;
+  background: rgba(0, 0, 255, 0.808);
+}
+
+@keyframes animacao
+{
+    0%  { transform: rotate(0deg)}
+
+    100%{ transform: rotate(360deg)}
+}
+
+@keyframes animacao2
+{
+    0%  { transform: rotate(360deg)}
+
+    100%{ transform: rotate(0deg)}
+}
+
+.conteudo{
+    position: relative;
+    padding: 40px 60px;
+    color:white;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.conteudo a{
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid white;
+    padding: 6px 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
+}
+
+.conteudo a:hover{
+    background-color: white;
+    color: rgba(0, 0, 255, 0.829)
+}
