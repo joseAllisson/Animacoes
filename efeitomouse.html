@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title>Mousemove</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/efeitoMove.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <script>
+            document.addEventListener("mousemove", function(move){
+                var body = document.querySelector('body');
+                var anima = document.createElement("span");
+                var x = move.offsetX;
+                var y = move.offsetY;
+                anima.style.left = x+"px";
+                anima.style.top = y+"px";
+                var size = Math.random() * 100;
+                anima.style.width = size + "20" +"px";
+                anima.style.height = size + "20" +"px";
+                body.appendChild(anima);
+
+                setTimeout(() => {
+                    anima.remove();
+                }, 4000);
+            })
+            
+        </script>
+    </body>
+</html>
