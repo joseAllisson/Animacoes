@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+.icon{
+    width: 500px;
+}
+
+
+.icon path, rect{
+    /* cor do fundo do icone */
+    fill: transparent;
+    /* tamanho da linha em volta do icone */
+    stroke-width: 3;
+    /* cor da linha */
+    stroke: #111;
+
+    stroke-dashoffset: 2230;
+    stroke-dasharray: 2230;
+    animation: anima2 2s linear forwards;
+}
+
+
+
+@keyframes anima{
+    
+    0%{
+        stroke-dashoffset: 2230;
+    }
+    100%{
+        
+        stroke-dashoffset:4460;
+    }
+
+}
+/* em uso */
+@keyframes anima2{
+    
+    0%{
+        stroke-dashoffset: 2230;
+        fill: transparent;
+    }
+    75%{
+        
+        stroke-dashoffset:4460;
+        fill: transparent;
+    }
+    100%{
+        
+        stroke-dashoffset:4460;
+    }
+
+}

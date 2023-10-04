@@ -35,9 +35,9 @@
 }
 
 @keyframes animacao{
-    0%  {transform: scaleX(0); transform-origin: left;background-color:blue;}
-    25% {transform: scaleX(1); transform-origin: left; background-color:blue}
-    50% {transform: scaleX(0); transform-origin: right;background-color:red}
-    75% {transform: scaleX(1); transform-origin: right;background-color:red}
+    0%{transform: scaleX(0);  transform-origin: left;background-color:blue;}
+    25%{transform: scaleX(1); transform-origin: left; background-color:blue}
+    50%{transform: scaleX(0);  transform-origin: right;background-color:red}
+    75%{transform: scaleX(1);  transform-origin: right;background-color:red}
     100%{transform: scaleX(0); transform-origin: left;background-color:red}
 }

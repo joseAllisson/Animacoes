@@ -11,7 +11,7 @@ body{
 
 span{
     position: absolute;
-    background-image: url(../img/foguete2.png);
+    background-image: url(../img/foguete.png);
     background-size: cover;
     transform: translate(-50%,-50%);
     pointer-events: none;

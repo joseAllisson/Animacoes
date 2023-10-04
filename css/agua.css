@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.content{
+    position: relative;
+}
+
+.content h2{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 150px;
+}
+
+.um{
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4; 
+    /*linha em volta do texto, borda de texto */
+    
+}
+
+.dois{
+    color: #03a9f4;
+    animation: anima 4s ease-in-out infinite;
+}
+
+@keyframes anima{
+    0%{clip-path: polygon(0 41%, 14% 38%, 28% 41%, 41% 52%, 54% 59%, 65% 61%, 78% 58%, 90% 54%, 100% 50%, 100% 100%, 0 100%); }
+    50%{clip-path: polygon(0 46%, 10% 51%, 20% 53%, 24% 53%, 35% 48%, 52% 43%, 68% 44%, 84% 39%, 100% 39%, 100% 100%, 0 100%); }
+    100%{clip-path: polygon(0 41%, 14% 38%, 28% 41%, 41% 52%, 54% 59%, 65% 61%, 78% 58%, 90% 54%, 100% 50%, 100% 100%, 0 100%); }
+}

@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+.icon{
+    width: 200px;
+}
+
+.icon path:nth-child(1){
+    /* cor do fundo do icone */
+    fill: transparent;
+    /* tamanho da linha em volta do icone */
+    stroke-width: 10;
+    /* cor da linha */
+    stroke: #111;
+}
+
+.icon path:nth-child(2){
+    /* cor do fundo do icone */
+    fill: transparent;
+    /* tamanho da linha em volta do icone */
+    stroke-width: 10;
+    /* cor da linha */
+    stroke: #4CAF50;
+}
+
+.icon.correct path:nth-child(1){
+    stroke-dashoffset: 2230;
+    stroke-dasharray: 2230;
+    animation: anima 1.5s linear forwards;
+   
+}
+
+.icon.correct path:nth-child(2){
+    stroke-dashoffset: 2230;
+    stroke-dasharray: 2230;
+    animation: anima2 1.5s linear forwards;
+   
+}
+
+
+@keyframes anima{
+    
+    0%{
+        stroke-dashoffset: 2230;
+    }
+    100%{
+        fill: #111;
+        stroke-dashoffset:4460;
+    }
+
+}
+
+@keyframes anima2{
+    
+    0%{
+        stroke-dashoffset: 2230;
+    }
+    90%{
+        fill: transparent;
+        stroke-dashoffset:4460;
+    }
+    100%{
+        fill: #4CAF50;
+        stroke-dashoffset:4460;
+    }
+
+}
