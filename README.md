@@ -1,5 +1,6 @@
 ## Exemplos de animações
 código antigo e em Português
+![efeito corda](https://github.com/joseAllisson/Animacoes/assets/59458404/b5a89753-ee13-472b-bf5b-5b48db8449eb)
 ![caderno](https://github.com/joseAllisson/Animacoes/assets/59458404/d570977d-a550-4b48-a5b0-db1eeed6c3c9)
 ![svg2](https://github.com/joseAllisson/Animacoes/assets/59458404/ba4d1493-9604-4d98-b9b5-b6665400b955)
 ![svg1](https://github.com/joseAllisson/Animacoes/assets/59458404/e0afeb13-44a0-4fac-8c74-b256b939aed5)
